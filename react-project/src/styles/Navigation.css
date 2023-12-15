@@ -1,0 +1,19 @@
+.nav-container{
+  list-style: none;
+  color :white; 
+  display: flex;
+  justify-content: center;
+  position:sticky;
+  top:0px;
+  
+}
+.nav-container li{
+  padding: 10px 15px;
+  font-size: 16px;
+  color: rgb(231, 227, 227);
+  display: flex;
+}
+.nav-container li:hover{
+color: white;
+
+}

@@ -1,0 +1,23 @@
+.main-container{
+  background-image: url("https://usa.bootcampcdn.com/wp-content/uploads/sites/119/2021/12/tes_uxi_blog_image_2-850x412.jpg");
+  min-height: 700px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: 100%;
+  color: white;
+
+}
+.text-main-content{
+  padding: 20vh;
+  font-weight: 700;
+}
+.text-main-content h1 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;}
+  .text-main-content p {
+    line-height:1.5;
+    font-size: 1.2rem;
+  }

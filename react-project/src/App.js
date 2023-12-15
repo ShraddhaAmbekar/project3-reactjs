@@ -12,13 +12,19 @@
 //   );
 // }
 
+import "./App.css"
+import Navigation from "./component/Navigation";
+import Main from "./component/Main"
+import Bio from "./component/Bio"
+
 //arrow function
 const App=() =>{
   return (
-<div>
-  <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img"/>
-  <h1>Hello this is my first component App</h1>
-</div>
+    <div>
+      <Navigation/>
+      <Main/>
+      <Bio/>
+    </div>
   );
 }
 export default App;
