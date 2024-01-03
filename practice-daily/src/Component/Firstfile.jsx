@@ -3,7 +3,7 @@ import React, { useState } from 'react'//not default import therefore {} reqired
 //let value=1
 
 const Firstfile = () => {
-  const [val, setVal] = useState(1) //hook
+  const [val, setVal] = useState(0) //hook
   function incHandler(){
     setVal(val + 1)
     console.log(val);
@@ -11,6 +11,10 @@ const Firstfile = () => {
   function decHandler(){
     setVal(val - 1)
     console.log(val);
+  }
+
+  function reset(){
+    setVal(0)
   }
 
   return (
@@ -31,6 +35,7 @@ const Firstfile = () => {
     }}>Decrement</button><br /><br />
     <button onClick={incHandler}>Inc</button>
     <button onClick={decHandler}>Dec</button>
+    <button onClick={reset}>Reset</button>
 </div>
   )
 }

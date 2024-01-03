@@ -32,33 +32,43 @@ const Tictactoe = () => {
     else if (stateArr[2] === p && stateArr[4] === p && stateArr[6] === p) {
       return true;
     }
-    else { return false ;
+    else {
+      return false;
     }
+  }
+
+  function reset(){
+    setStateArr(arr)
+    setPlayer('X')
+    setWin(false)
   }
 
   return (
     <div className='container'>
       {stateArr.map(function (ele, index) {
-        return win === false ? <button
+        return win === false ? <button className='xobutton'
           onClick={function () {
             //console.log('btn')
             let result = false;
             if (stateArr[index] === "") {
               stateArr[index] = player;
-              result=checkWinner(player);
+              result = checkWinner(player);
               setWin(result);
               //stateArr[index]='0'
-              setPlayer(player === "X"?"0":"X")
+              setPlayer(player === "X" ? "0" : "X")
             }
             //console.log(stateArr);
             setStateArr([...stateArr])
           }}
         >{ele}
-        </button> : <button>{ele}</button>
+        </button> : <button className='xobutton'>{ele}</button>
       })}
-      {win === true ?<p>player {player === "X"?"0":"X"} is win</p>:<></>}
-
-
+      {win === true ? <h2>player {player === "X" ? "0" : "X"} is win</h2> : <></>}
+      <br />
+      <div className='reset'>
+      <button className="resetbutton" onClick={reset}>Reset</button>
+      </div>
+     
     </div>
   )
 }
