@@ -17,12 +17,13 @@
 height: 40px;
 width:150px;
 font-size: 30px;
-background-color: rgb(215, 137, 81);
+background-color: rgb(227, 149, 94);
 border: none;
 color: rgb(47, 28, 139);
 justify-content: center;
 display: block;
 margin: auto;
+border-radius: 30px;
 
 }
 .reset{
