@@ -1,0 +1,19 @@
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px); /* 9 columns with 40px width each */
+  grid-template-rows: repeat(9, 40px);/* 9 rows with 40px height each */
+  justify-content: center;
+}
+
+/* Styling for each row in the Sudoku board */
+
+/* Styling for the individual cells */
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
